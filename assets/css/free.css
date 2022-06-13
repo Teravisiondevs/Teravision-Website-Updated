@@ -1,0 +1,26 @@
+@media screen and (max-width: 608px) {
+    .logo{
+      font-size: 1rem!important;
+    
+    }
+    .vid__services{
+        width: 100%;
+        height: 300px;
+    }
+    .member-img-free1 {
+        width: 6002px!important;
+
+    }
+    .get-started-btn{
+        font-size: 12px!important;
+        padding: 5px 10px 8px 10px!important;
+    }
+  
+  }
+
+  .member-img-free2{
+      justify-content: center!important;
+      display: flex!important;
+      align-items: center!important;
+      text-align: center!important;
+  }
