@@ -11,6 +11,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 a {
@@ -24,6 +29,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 5px;
 }
 
 
@@ -951,6 +958,7 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
+  margin-top: 300px;
   padding: 80px 0;
   background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
@@ -1573,3 +1581,56 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.v{
+  margin-left: 100px;
+  margin-top: 100px;
+  text-align: left;
+  color: #3d0061;
+}
+.desv{
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 1000px;
+  text-align: left;
+  color: #000;
+}
+
+.vis{
+  margin-top: -480px;
+  margin-left: 550px;
+  color: #3d0061;
+}
+.desvis{
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+  color: #000;
+}
+.mis{
+  margin-top: -508px;
+  margin-left: 1000px;
+  color: #3d0061;
+}
+.desmis{
+  font-size: 14px;
+  margin-top:20px;
+  margin-left: 900px;
+  color: #000;
+}
+.its{
+  text-align: center;
+  margin-top: 50px;
+  color: #000;
+  margin: 0;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
