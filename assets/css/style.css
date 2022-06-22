@@ -1655,7 +1655,29 @@ section {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
+
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 80vh;
+  }
+
+}
+@media only screen and (max-width: 390px) {
+
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 90vh;
+  }
+
+}
+@media only screen and (max-width: 380px) {
 
   .mission-vision{
     text-align: center;
