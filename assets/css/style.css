@@ -711,6 +711,45 @@ section {
   transform: translateY(-10px);
 }
 
+/* Partners */
+
+.partners {
+  transform: translate(0%, 100%);
+}
+
+.partners .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.partners .owl-item img {
+  width: 70%;
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.partners .owl-item img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.partners .owl-nav, .partners .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.partners .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
