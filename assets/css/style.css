@@ -715,6 +715,7 @@ section {
 
 .partners {
   transform: translate(0%, 100%);
+  padding-top: 5em;
 }
 
 .partners .owl-item {
@@ -1778,6 +1779,17 @@ section {
     color: #000;
     margin: 0;
     height: 180vh;
+  }
+
+}
+@media only screen and (max-width: 280px) {
+
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 160vh;
   }
 
 }
