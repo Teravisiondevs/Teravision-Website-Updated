@@ -1681,7 +1681,39 @@ section {
   height: 300px; 
 }
 
+@media only screen and (max-width: 1050px) {
 
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 40vh;
+  }
+
+}
+@media only screen and (max-width: 1000px) {
+
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 35vh;
+  }
+
+}
+@media only screen and (max-width: 850px) {
+
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 35vh;
+  }
+
+}
 @media only screen and (max-width: 768px) {
 
   .mission-vision{
@@ -1690,6 +1722,17 @@ section {
     color: #000;
     margin: 0;
     height: 40vh;
+  }
+
+}
+@media only screen and (max-width: 550px) {
+
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 70vh;
   }
 
 }
@@ -1724,6 +1767,17 @@ section {
     color: #000;
     margin: 0;
     height: 120vh;
+  }
+
+}
+@media only screen and (max-width: 320px) {
+
+  .mission-vision{
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    margin: 0;
+    height: 180vh;
   }
 
 }
