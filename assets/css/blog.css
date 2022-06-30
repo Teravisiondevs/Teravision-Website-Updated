@@ -58,7 +58,7 @@
   width:300px;
   background-color:#fff;
   box-shadow:0px 0px 8px 0px #a3a3a3;
-  margin-left:50px;
+  margin-left:21px;
   }
   .card-container{
   margin-top:10px;
@@ -93,17 +93,19 @@
   margin-left:30px;
   }
   .category-tag{
-  width:100px;
-  height:25px;
-  background-color:#9d14f3;
-  border-radius:15px;
-  margin-left:190px;
+  width: 100px;
+  height: 25px;
+  background-color: #9d14f3;
+  border-radius: 15px;
+  margin-left: 11px;
+  margin-top: -22px;
   }
   .cat-tag{
   font-size:11px;
   font-family:Inter,sans-serif;
   color:#fff;
   margin-left:20px;
+  margin-top: 20px;
   }
   .card-heading{
   background-image:url('../images/draft-bg.jpg');
