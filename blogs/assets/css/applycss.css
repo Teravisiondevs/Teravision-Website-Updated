@@ -1,0 +1,38 @@
+.form-container{
+	margin-left:320px;
+	border-radius:15px;
+	height:auto;
+	width:650px;
+	background-color:#fff;
+	padding:10px;
+	box-shadow: 10px 10px 10px 6px #a3a3a3;
+}
+.applicants-form h6{
+	margin-top:-15px;
+}
+.line-cut{
+	height:0.5px;
+	background-color:#a3a3a3;
+}
+.per-line-contents1{
+	margin:0px;
+	padding:0px;
+	display:flex;
+}
+.per-line-contents2{
+	margin:0px;
+	padding:0px;
+}
+.submitbtn{
+	width:150px;
+	height:50px;
+	text-transform:uppercase;
+	background-color:#9900cc;
+	border-radius:15px;
+	border:1px solid #9900cc;
+	color:#fff;
+}
+.submitbtn:hover{
+	color:#fff;
+	background-color:#600080;
+}
