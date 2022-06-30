@@ -83,8 +83,8 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#about" class="get-started-btn scrollto">Apply Now!</a>
-
+      <a type="button" href class="get-started-btn scrollto" data-toggle="modal" data-target="#applicationModal">Apply Now!</a>
+      
     </div>
   </header><!-- End Header -->
 
@@ -794,6 +794,106 @@
       </div>
     </section><!-- End Contact Section -->
     
+    <!-- Application Modal -->
+
+    <div class="modal fade" id="applicationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="applicationModalLabel">Apply for a position</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+              <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <div class="form-container">
+               <form class="applicants-form" action="applyform.php" method="POST">
+                <h6>Please complete the form below to apply for a position with us</h6>
+                <div class="line-cut"></div><br>
+            
+                <div class="per-line-contents1">
+                  <h5>Name</h5>
+                  <!--  -->
+                  <div class="row pt-2">
+                    <div class="col-md-6 col-12 form-group mb-4">
+                      <input type="text" class="form-control" placeholder="First Name" required id="fname"/>
+                    </div>
+                    <div class="col-md-6 col-12 form-group mb-4">
+                      <input type="text" class="form-control" placeholder="Last Name" required/>
+                    </div>
+                  </div>
+                </div>
+              
+              <div class="per-line-contents1">
+                <h5>Email</h5>
+                <!--  -->
+                <div class="row pt-2">
+                  <div class="col-12 col-md-12 mb-4">
+                    <input type="email" class="form-control" height="50px" width="350px" placeholder="ex:myname@gmail.com" required/>
+                  </div>
+                </div>
+              </div>
+              <div class="per-line-contents1">
+                <h5>Phone Number</h5>
+                <!--  -->
+                <div class="row pt-2" style="text-align: center;">
+                  <div class="col-12 col-md-12 mb-4">
+                    <input type="text" class="form-control" required> 
+                  </div>
+                </div>
+              </div>
+        
+              <div class="per-line-contents1">
+              <h5>Applying for Position:</h5>
+              <!--  -->
+                <div class="row pt-2" style="text-align: center;">
+                  <div class="col-12 col-md-12 mb-4">
+                    <select id="reasonID" class="form-control" style="padding: 1.1rem; line-height: 1rem">
+                      <option selected>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="per-line-contents1">
+              <h5>When can you start?</h5>
+              <!--  -->
+              <div class="row pt-2" style="text-align: center;">
+                <div class="col-12 col-md-12 mb-4">
+                  <input type="text" class="form-control" height="50px" width="150px" required>
+                </div>
+              </div>
+              </div>
+              <div class="per-line-contents2">
+              <h5>Cover Letter</h5><br>
+              <!--  -->
+              <div class="col-12 col-md-12 mb-4">
+                <textarea name="" class="form-control" rows="7"  placeholder="Type your message here"></textarea>
+              </div>
+              </div>
+              <div class="per-line-contents1">
+              
+              <h5>Upload Resume</h5>
+              <div class="col-12 col-md-12 mb-4 pt-2">
+                <input type="file" class="form-control" id="myFile" name="filename">
+              </div>
+              </div>      
+            </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" name="login" class="btn btn-primary" style="background-color: #007aff; color:#fff;">Send Application</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
