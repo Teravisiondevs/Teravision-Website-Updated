@@ -729,7 +729,7 @@
         </div>
 
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.005894891439!2d121.05062944896302!3d14.646101712294973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b70b8c4c00b7%3A0xaf3940936b734fda!2sOur%20Redemption%20Center!5e0!3m2!1sen!2sph!4v1656661376627!5m2!1sen!2sph" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="row mt-5">
@@ -804,93 +804,84 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
+
+            
+
           </div>
           <div class="modal-body">
             
-              <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <div class="form-container">
-               <form class="applicants-form" action="applyform.php" method="POST">
-                <h6>Please complete the form below to apply for a position with us</h6>
-                <div class="line-cut"></div><br>
-            
-                <div class="per-line-contents1">
-                  <h5>Name</h5>
-                  <!--  -->
-                  <div class="row pt-2">
-                    <div class="col-md-6 col-12 form-group mb-4">
-                      <input type="text" class="form-control" placeholder="First Name" required id="fname"/>
-                    </div>
-                    <div class="col-md-6 col-12 form-group mb-4">
-                      <input type="text" class="form-control" placeholder="Last Name" required/>
-                    </div>
-                  </div>
-                </div>
-              
-              <div class="per-line-contents1">
-                <h5>Email</h5>
-                <!--  -->
-                <div class="row pt-2">
-                  <div class="col-12 col-md-12 mb-4">
-                    <input type="email" class="form-control" height="50px" width="350px" placeholder="ex:myname@gmail.com" required/>
-                  </div>
-                </div>
-              </div>
-              <div class="per-line-contents1">
-                <h5>Phone Number</h5>
-                <!--  -->
-                <div class="row pt-2" style="text-align: center;">
-                  <div class="col-12 col-md-12 mb-4">
-                    <input type="text" class="form-control" required> 
-                  </div>
-                </div>
-              </div>
-        
-              <div class="per-line-contents1">
-              <h5>Applying for Position:</h5>
+             <!-- START HERE -->
+   <link rel="stylesheet" href="assets/css/pure-min.css">
+   <link rel="stylesheet" href="assets/css/awesome.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="assets/css/style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbwaPtyI0TaGT6aXPvytaVS4QuMfjNg3aqhWr-oimOYZdkwSdI9as29sz32Mg128xjSHCw/exec">
+    
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="Full Name name">Full Name name: </label>
+        <input id="Full Name name" name="Full Name name" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="Phone Number">Phone Number: </label>
+        <input id="Phone Number" name="Phone Number" placeholder="ex:09123456789" />
+      </fieldset>
+
+       <fieldset class="pure-group">
+        <label for="message">Position: </label>
+        <select name="Pos" class="form-control" style="padding-top: 4px; line-height: 1rem" id="pos">
+          <option value="" disabled selected>Preferred Position</option>
+          <option value="UI/UX Designer">UI/UX Designer</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="Mobile App Developer">Mobile App Developer</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: (Include resume/CV Google drive Link) </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us about yourself"></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="when can you start ?">when can you start ? </label>
+        <input id="when can you start ?" name="when can you start ?" placeholder="ex: JAN/1/2000" />
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+ 
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+    </div>
+
+    
+
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
               <!--  -->
-                <div class="row pt-2" style="text-align: center;">
-                  <div class="col-12 col-md-12 mb-4">
-                    <select id="reasonID" class="form-control" style="padding: 1.1rem; line-height: 1rem">
-                      <option selected>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="per-line-contents1">
-              <h5>When can you start?</h5>
-              <!--  -->
-              <div class="row pt-2" style="text-align: center;">
-                <div class="col-12 col-md-12 mb-4">
-                  <input type="text" class="form-control" height="50px" width="150px" required>
-                </div>
-              </div>
-              </div>
-              <div class="per-line-contents2">
-              <h5>Cover Letter</h5><br>
-              <!--  -->
-              <div class="col-12 col-md-12 mb-4">
-                <textarea name="" class="form-control" rows="7"  placeholder="Type your message here"></textarea>
-              </div>
-              </div>
-              <div class="per-line-contents1">
-              
-              <h5>Upload Resume</h5>
-              <div class="col-12 col-md-12 mb-4 pt-2">
-                <input type="file" class="form-control" id="myFile" name="filename">
-              </div>
-              </div>      
-            </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" name="login" class="btn btn-primary" style="background-color: #007aff; color:#fff;">Send Application</button>
-          </div>
-        </form>
+             
         </div>
       </div>
     </div>
