@@ -71,10 +71,11 @@
   height:170px;	
   }
   .card-msg{
-  text-align:center;
+  text-align:left;
   margin-top:20px;
-  font-family:Inter,sans-serif;
+  font-family:"Poppins", sans-serif;
   font-weight:bold;
+  padding-inline: 20px;
   }
   .rm{
   font-size:11px;
