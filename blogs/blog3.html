@@ -86,7 +86,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#about" class="get-started-btn scrollto">Apply Now!</a>
+      <a type="button" href class="get-started-btn scrollto" data-toggle="modal" data-target="#applicationModal">Apply Now!</a>
 
     </div>
   </header><!-- End Header -->
@@ -235,6 +235,99 @@
       </div>
     </div>    
   </div>
+
+  <!-- Application Modal -->
+
+    <div class="modal fade" id="applicationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="applicationModalLabel">Apply for a position</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            
+
+          </div>
+          <div class="modal-body">
+            
+             <!-- START HERE -->
+   <link rel="stylesheet" href="assets/css/pure-min.css">
+   <link rel="stylesheet" href="assets/css/awesome.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="assets/css/style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbzootZpmkmLZppbCJeAfj8GDrUpOgNok1IjRviDb2O7dUJMnrGSNCmt7qPp7gi9dqWcVg/exec">
+    
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="Full Name name">Full Name: </label>
+        <input id="Full Name name" name="Full Name name" style="width:100%"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email">Email Address: </label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com" style="width:100%"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="Phone Number">Phone Number: </label>
+        <input id="Phone Number" name="Phone Number" placeholder="ex:09123456789" style="width:100%"/>
+      </fieldset>
+
+       <fieldset class="pure-group">
+        <label for="message">Position: </label>
+        <select name="Pos" class="form-control" style="padding-top: 4px; line-height: 1rem" id="pos" style="width:100%">
+          <option value="" disabled selected>Preferred Position</option>
+          <option value="UI/UX Designer">UI/UX Designer</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="Mobile App Developer">Mobile App Developer</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: (Include Resume/CV Google Drive Link) </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us about yourself..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="when can you start ?">when can you start ? </label>
+        <input id="when can you start ?" name="when can you start ?" placeholder="ex: JAN/1/2000" style="width:100%"/>
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+ 
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+    </div>
+
+    
+
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+              <!--  -->
+             
+        </div>
+      </div>
+    </div>
+  
  
   <!-- ======= Footer ======= -->
   <footer id="footer">
